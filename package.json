@@ -1,35 +1,42 @@
 {
   "name": "log1997-vite-plugin-console",
   "author": "LOG1997",
-   "version": "0.1.0",
+  "version": "0.1.0",
   "license": "MIT",
-  "main": "packages/vite-plugin-console/dist/index.cjs",
-   "module": "packages/vite-plugin-console/dist/index.mjs",
-   "types": "packages/vite-plugin-console/dist/index.d.ts",
-   "exports": {
-     ".": {
-       "import": "./packages/vite-plugin-console/dist/index.mjs",
-       "require": "./packages/vite-plugin-console/dist/index.cjs",
-       "types": "./packages/vite-plugin-console/dist/index.d.ts"
-     }
-   },
-  "private": true,
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "private": false,
   "scripts": {
     "dev": "pnpm --filter react-demo dev",
     "build": "pnpm --filter @log1997/vite-plugin-console build",
-    "build:all": "pnpm build && pnpm --filter react-demo build"
+    "build:all": "pnpm build && pnpm --filter react-demo build",
+    "publish": "pnpm build && pnpm --filter @log1997/vite-plugin-console publish"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/LOG1997/log1997-vite-plugin-console"
-    },
-      "files": [
-        "packages/vite-plugin-console/dist",
-        "packages/vite-plugin-console/README.md",
-        "packages/vite-plugin-console/LICENSE",
-        "package.json"
-      ],
-  "keywords": ["vite", "plugin", "console", "log", "style", "development"],
+    "type": "git",
+    "url": "git+https://github.com/LOG1997/log1997-vite-plugin-console.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "vite",
+    "plugin",
+    "console",
+    "log",
+    "style",
+    "development"
+  ],
   "engines": {
     "node": ">=18"
   }
