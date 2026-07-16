@@ -21,12 +21,13 @@
   },
   "repository": {
       "type": "git",
-      "url": "https://github.com/your/repo.git"
+      "url": "https://github.com/LOG1997/log1997-vite-plugin-console"
     },
       "files": [
         "packages/vite-plugin-console/dist",
         "packages/vite-plugin-console/README.md",
-        "packages/vite-plugin-console/LICENSE"
+        "packages/vite-plugin-console/LICENSE",
+        "package.json"
       ],
   "keywords": ["vite", "plugin", "console", "log", "style", "development"],
   "engines": {
